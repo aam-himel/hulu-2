@@ -7,3 +7,15 @@
         @apply bg-[#06202A] text-gray-300;
     }
 }
+
+@layer utilities {
+    @responsive {
+        .scrollbar-hide {
+            ms-overflow-style: none;  
+            scrollbar-width: none;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display:none;
+        }
+    }
+}
